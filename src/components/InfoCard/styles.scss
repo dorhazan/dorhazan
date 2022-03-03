@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+.card-container {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+  .card {
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+      rgb(38, 57, 77) 0px 20px 20px -10px;
+
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  &__primary {
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    .avatar {
+      .dor {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+    }
+    > a {
+      cursor: pointer;
+      background-color: rgb(0, 0, 0);
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      width: 150px;
+      margin: 5px 0;
+      border: 2px solid black;
+      transition: background-color 0.4s ease-in-out;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    > a:visited {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+  }
+  &__secondary {
+    width: 250px;
+    height: 320px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills {
+    h3 {
+    }
+    > div {
+      display: flex;
+      align-items: center;
+
+      flex-direction: column;
+      > span {
+        margin: 2px;
+        // background-color: black;
+        // color: white;
+        font-family: "Share Tech Mono", monospace;
+        width: fit-content;
+        height: fit-content;
+        padding: 0px 5px;
+        // -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.09);
+        // box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.09);
+      }
+    }
+  }
+  .extra-technologies {
+    h3 {
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      > span {
+        margin: 2px;
+        // background-color: black;
+        // color: white;
+        font-family: "Share Tech Mono", monospace;
+        width: fit-content;
+        height: fit-content;
+        padding: 0px 5px;
+        // -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.09);
+        // box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.09);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1366px) {
+  .card-container {
+    flex-direction: row;
+    margin-top: 10px;
+    .card {
+    }
+    &__primary {
+      width: 300px;
+      height: 400px;
+
+      .avatar {
+        .dor {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      > a {
+        font-size: 30px;
+        border-radius: 5px;
+        width: 150px;
+        margin: 5px 0;
+      }
+      > a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 2px solid black;
+      }
+    }
+    &__secondary {
+      width: 250px;
+      height: 350px;
+      font-size: 20px;
+    }
+    .skills {
+      h3 {
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+    .extra-technologies {
+      h3 {
+      }
+      > div {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .card-container {
+    flex-direction: row;
+    margin-top: 10px;
+    .card {
+    }
+    &__primary {
+      width: 300px;
+      height: 400px;
+
+      .avatar {
+        .dor {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      > a {
+        font-size: 30px;
+        border-radius: 5px;
+        width: 150px;
+        margin: 5px 0;
+      }
+      > a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 2px solid black;
+      }
+    }
+    &__secondary {
+      width: 250px;
+      height: 350px;
+      font-size: 20px;
+    }
+    .skills {
+      h3 {
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+    .extra-technologies {
+      h3 {
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .card-container {
+    margin-top: 50px;
+    .card {
+    }
+    &__primary {
+      width: 350px;
+      height: 450px;
+
+      .avatar {
+        .dor {
+          width: 240px;
+          height: 240px;
+        }
+      }
+      > a {
+      }
+      > a:hover {
+      }
+    }
+    &__secondary {
+      width: 280px;
+      height: 380px;
+      font-size: 23px;
+    }
+    .skills {
+      h3 {
+      }
+      > div {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+    .extra-technologies {
+      h3 {
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > span {
+        }
+        > span:hover {
+        }
+      }
+    }
+  }
+}
